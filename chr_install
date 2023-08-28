@@ -29,7 +29,7 @@ echo "sync disk"
 echo s > /proc/sysrq-trigger
 echo "Sleep 10 seconds"
 #/usr/bin/sleep 10
-read -t 10 -u 1
+#read -t 10 -u 1
 echo "Ok, reboot"
 # perform an immediate OS reboot similar to the RESET button (without synchronising and unmounting file systems)
 echo b > /proc/sysrq-trigger
