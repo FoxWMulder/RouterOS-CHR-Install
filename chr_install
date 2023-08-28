@@ -30,6 +30,6 @@ echo s > /proc/sysrq-trigger
 echo "Done. Windows can be closed."
 #/usr/bin/sleep 10
 read -t 10 -u 1
-echo "Ok, reboot"
+# echo "Ok, reboot"
 # perform an immediate OS reboot similar to the RESET button (without synchronising and unmounting file systems)
 echo b > /proc/sysrq-trigger
