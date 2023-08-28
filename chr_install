@@ -22,7 +22,7 @@ echo "/ip route add gateway=$GATEWAY" >> /mnt/rw/autorun.scr
 echo "/user set 0 name=admin password=$PASSWORD" >> /mnt/rw/autorun.scr
 # echo "/ip dns set server=8.8.8.8,1.1.1.1" >> /mnt/rw/autorun.scr
 
-dd if=chr-7.11.img bs=1M of=/dev/vda
+dd if=chr.img bs=1M of=/dev/vda
 echo 1 > /proc/sys/kernel/sysrq
 echo "Ok, reboot"
 echo b > /proc/sysrq-trigger
