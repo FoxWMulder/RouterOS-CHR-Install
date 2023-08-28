@@ -11,7 +11,7 @@ VERSIONCHR=7.11
 wget -4 https://download.mikrotik.com/routeros/$VERSIONCHR/chr-$VERSIONCHR.img.zip -O chr.img.zip
 gunzip -c chr.img.zip > chr.img
 mount -o loop,offset=33571840 chr.img /mnt
-apt install -y pwgen coreutils #installing the password generation package
+# apt install -y pwgen coreutils #installing the password generation package
 # PASSWORD=$(pwgen 12 1) #password generation
 echo "Username: admin"
 # echo "Password: $PASSWORD"
