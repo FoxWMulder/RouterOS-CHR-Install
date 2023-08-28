@@ -28,6 +28,7 @@ echo "sync disk"
 # synchronize all mounted filesystems
 echo s > /proc/sysrq-trigger
 echo "Sleep 10 seconds"
+#надо подождать и можно закрывать окно. хрен его знает как заставить его под финал написать что можно закрывать окно
 #/usr/bin/sleep 10
 read -t 10 -u 1
 echo "Ok, reboot"
